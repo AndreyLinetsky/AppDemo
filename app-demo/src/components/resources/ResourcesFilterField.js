@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
-import {
-  HorizontalContainer,
-  iconCommonStyle
-} from "../../styles/commonStyles";
+import { iconCommonStyle } from "../../styles/commonStyles";
 import { TextField } from "../fields";
 import { inputBackgroundColor } from "../../styles/colors";
 
-const FilterFieldContainer = styled(HorizontalContainer)`
+const FilterFieldContainer = styled.div`
+  display: flex;
   background-color: ${inputBackgroundColor};
   margin-top: 8px;
+  > div {
+    flex: 4;
+  }
+  > svg {
+    flex: 1;
+  }
 `;
 
 const StyledTextField = styled(TextField)`

@@ -4,14 +4,12 @@ import styled from "styled-components";
 import {
   HeaderText,
   SubHeaderText,
-  VerticalContainer,
-  HorizontalContainer,
   iconCommonStyle
 } from "../../../styles/commonStyles";
 import { ReactComponent as HelpIcon } from "../../../assets/icons/help-12.svg";
 
-const SectionHeaderContainer = styled(VerticalContainer)`
-  margin-bottom: 5px;
+const SectionHeaderContainer = styled.div`
+  margin-bottom: 10px;
 `;
 
 const SectionHeaderText = styled(HeaderText)`
@@ -20,8 +18,9 @@ const SectionHeaderText = styled(HeaderText)`
   margin: auto 0;
 `;
 
-const HeaderTextContainer = styled(HorizontalContainer)`
-  margin-bottom: 6px;
+const HeaderTextContainer = styled.div`
+  display: flex;
+  margin-bottom: 3px;
 `;
 const StyledHelpIcon = styled(HelpIcon)`
   ${iconCommonStyle};

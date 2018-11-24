@@ -3,13 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ReactComponent as CheckMarkIcon } from "../../assets/icons/active.svg";
 import { ReactComponent as ArrowIcon } from "../../assets/icons/arrow-right.svg";
-import {
-  iconCommonStyle,
-  horizontalContainerStyle
-} from "../../styles/commonStyles";
+import { iconCommonStyle } from "../../styles/commonStyles";
 
 const StyledListItem = styled.li`
-  ${horizontalContainerStyle};
+  display: flex;
   cursor: pointer;
   padding: 6px 0;
   position: relative;

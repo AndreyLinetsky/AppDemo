@@ -20,17 +20,8 @@ export const verticalContainerStyle = `
   flex-direction: column;
 `;
 
-export const horizontalContainerStyle = `
-  display: flex;
-  flex-direction: row;
-`;
-
 export const VerticalContainer = styled.div`
   ${verticalContainerStyle};
-`;
-
-export const HorizontalContainer = styled.div`
-  ${horizontalContainerStyle};
 `;
 
 export const iconCommonStyle = `
@@ -43,7 +34,6 @@ padding: 7px 8px;
 background-color: ${inputBackgroundColor};
 border: none;
 font-size: 10px;
-width: 100%;
 margin-bottom: 5px;
 :focus {
   outline: 0;

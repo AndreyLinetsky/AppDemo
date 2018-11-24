@@ -7,18 +7,13 @@ import {
   ResourcesList
 } from "../components/resources";
 import styled from "styled-components";
-import {
-  VerticalContainer,
-  verticalContainerStyle
-} from "../styles/commonStyles";
 
 const AsideContainer = styled.aside`
-  ${verticalContainerStyle};
   width: 300px;
   padding-left: 1px;
 `;
 
-const FilterAndHeaderContainer = styled(VerticalContainer)`
+const FilterAndHeaderContainer = styled.div`
   padding: 10px;
 `;
 

@@ -11,7 +11,6 @@ const HeaderPanelContainer = styled.header`
   right: 0;
   position: fixed;
   height: ${headerPanelHeight};
-  justify-content: flex-start;
   align-items: center;
   z-index: 1;
 `;

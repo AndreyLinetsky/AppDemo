@@ -3,9 +3,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import SectionHeader from "../common/SectionHeader";
 import ActionsList from "./ActionsList";
-import { VerticalContainer } from "../../../styles/commonStyles";
 
-const SectionContainer = styled(VerticalContainer)`
+const SectionContainer = styled.div`
   width: 40%;
   padding: 0 12px 5px;
   min-height: 100%;

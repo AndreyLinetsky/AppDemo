@@ -1,21 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { DetailsHeader, GeneralDetailsSection, ActionsSection } from "./";
-import {
-  VerticalContainer,
-  HorizontalContainer
-} from "../../styles/commonStyles";
+import { VerticalContainer } from "../../styles/commonStyles";
 import styled from "styled-components";
 
 const WidgetContainer = styled(VerticalContainer)`
-  height: 100%;
+  min-height: 100%;
   background-color: white;
   box-shadow: 0px 1px 4px 1px #888888;
 `;
 
-const ContentContainer = styled(HorizontalContainer)`
+const ContentContainer = styled.div`
+  display: flex;
   padding-top: 15px;
-  height: 100%;
+  flex: 1;
 `;
 
 export default function DetailsViewWidget({ resource, resourceActions }) {

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const DetailsViewWrapper = styled.div`
   background-color: #f3f3f3;
-  width: 100%;
+  flex: 1;
   padding: 75px;
 `;
 

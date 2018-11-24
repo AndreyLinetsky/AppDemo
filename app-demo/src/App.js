@@ -5,18 +5,13 @@ import HeaderPanel from "./components/HeaderPanel";
 import { GlobalStyle } from "./styles/appDefaultStyles";
 import ResourcesContainer from "./containers/ResourcesContainer";
 import DetailsViewContainer from "./containers/DetailsViewContainer";
-import {
-  headerPanelHeight,
-  VerticalContainer,
-  horizontalContainerStyle
-} from "./styles/commonStyles";
+import { VerticalContainer, headerPanelHeight } from "./styles/commonStyles";
 
 const ApplicationContainer = styled(VerticalContainer)`
-  height: 100vh;
-  flex: 1;
+  min-height: calc(100vh - ${headerPanelHeight});
 `;
 const MainContainer = styled.main`
-  ${horizontalContainerStyle};
+  display: flex;
   flex: 1;
   position: relative;
   top: ${headerPanelHeight};

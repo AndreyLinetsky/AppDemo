@@ -1,13 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import {
-  HeaderText,
-  SubHeaderText,
-  VerticalContainer
-} from "../../styles/commonStyles";
+import { HeaderText, SubHeaderText } from "../../styles/commonStyles";
 
-const DetailsHeaderContainer = styled(VerticalContainer)`
+const DetailsHeaderContainer = styled.div`
   background-color: #5390ea;
   height: 70px;
   padding: 9px;

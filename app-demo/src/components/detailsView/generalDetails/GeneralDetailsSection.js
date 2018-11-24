@@ -2,17 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import SectionHeader from "../common/SectionHeader";
-import { VerticalContainer } from "../../../styles/commonStyles";
 import { ReadOnlyTextArea, TextField } from "../../fields";
 
-const SectionContainer = styled(VerticalContainer)`
+const SectionContainer = styled.div`
   width: 60%;
   border-right: 1px solid lightgray;
   padding: 0 12px 5px;
   min-height: 100%;
 `;
 
-const FieldsContainer = styled(VerticalContainer)`
+const FieldsContainer = styled.div`
   margin-top: 6px;
 `;
 
