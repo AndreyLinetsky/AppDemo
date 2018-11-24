@@ -30,6 +30,10 @@ const ResourceName = styled.span`
   color: #696969;
   margin: auto 0;
   font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
 `;
 
 const StyledArrowIcon = styled(ArrowIcon)`
